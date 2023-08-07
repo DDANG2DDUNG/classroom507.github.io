@@ -12,10 +12,11 @@
     <script src="JAVASCRIPT/set_pop.js"></script>
     <script src="JAVASCRIPT/set_radio.js"></script>
     <script src="JAVASCRIPT/importPage.js"></script>
+    <script src="JAVASCRIPT/importPage.js"></script>
 </head>
 <body>
 
-    <div class="outer">
+    <div id="outer">
         <header id="header"></header>
         <div id="poster"></div>
         <div>
@@ -33,8 +34,11 @@
             </div>
         </div>
     </div>
+    
 
     <script>
+
+        $('#outer').width(screen.width);
 
         set_pop_block('1');
         set_rad_chk('1');

@@ -16,18 +16,9 @@ body{
     font-family:'NanumBarunGothic';
 }
 
-
-
-label{
-    border-width:1px 1px 0px 1px;
-    border-style: solid;
-    border-color: white;
-    width: auto;
-
-    flex-grow:1;
-    text-align: center;
-    padding : 10px;
-    border-radius:10px 10px 0px 0px;
+#outer{ /* 가운데 정렬을 위한 outer div*/
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 header{
@@ -52,19 +43,6 @@ header div{
     font-size: small;
 }
 
-[type="radio"], /*라디오버튼 안나타나게 하기*/
-span {
-vertical-align: middle;
-appearance: none;
-display: none;
-}
-
-.outer{ /* 가운데 정렬을 위한 outer div*/
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1000px;
-}
-
 .logo{
     display:inline-block;
 	width:1em;
@@ -72,16 +50,45 @@ display: none;
     align-items: center;
 }
 
-#POP, #poster, #radio {
-   padding : 10px;
+label{
+    border-width:1px 1px 0px 1px;
+    border-style: solid;
+    border-color: white;
+    width: auto;
+
+    flex-grow:1;
+    text-align: center;
+    padding : 10px;
+    border-radius:10px 10px 0px 0px;
+}
+
+
+#poster {
+    padding :10px;
+}
+
+
+[type="radio"], /*라디오버튼 안나타나게 하기*/
+span {
+vertical-align: middle;
+appearance: none;
+display: none;
+}
+
+#POP, #radio {
+   padding : 0 10px 0 10px;
    width:100%;
    box-sizing: border-box;
 }
 
+
 #radio {
-    width:100%;
     display: flex;
     flex-direction: row;
+}
+
+img {
+    width: 100%;
 }
 /*
 div{
