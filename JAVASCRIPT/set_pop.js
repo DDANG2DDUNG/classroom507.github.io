@@ -1,10 +1,12 @@
 
 function set_pop_none(chkValue){
     $('#POP'+chkValue).css('display', 'none');
+ 
 }
 
 function set_pop_block(chkValue){
     $('#POP'+chkValue).css('display', 'block');
+    
 }
 
 
