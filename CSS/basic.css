@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+@font-face {
+ font-family: 'NanumBarunGothic';
+ font-style: normal;
+ font-weight: 400;
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+ src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'NanumBarunGothic';
+}
+
+
+
+label{
+    border-width:1px 1px 1px 0px;
+    border-style: solid;
+    border-color: white;
+}
+
+a{
+    color: gray;
+}
+
+[type="radio"], /*라디오버튼 안나타나게 하기*/
+span {
+vertical-align: middle;
+appearance: none;
+display: none;
+}
+
+.outer{ /* 가운데 정렬을 위한 outer div*/
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.logo{
+    display:inline-block;
+	width:1em;
+	height:1em;
+	margin:auto;
+}
+
+div{
+    border:solid;
+    border-width: 1px; /*영역 확인 용  다 확인하면 삭제할 것*/
+}

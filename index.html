@@ -1,4 +1,56 @@
 
-<h>hello world!</h>
-<h>hellow world!2</h>
-<h>hello world!3</h>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>테스트 페이지</title>
+
+    <link rel="stylesheet" href="CSS/basic.css">
+
+    <script src="JAVASCRIPT/set_pop.js"></script>
+    <script src="JAVASCRIPT/set_radio.js"></script>
+    <script src="JAVASCRIPT/importPage.js"></script>
+</head>
+<body>
+
+    <div class="outer">
+        <header id="header"></header>
+        <div id="poster"></div>
+        <div>
+            <div id="radio">
+                <label id="RAD1"><input type="radio" name="tp_cd" value="1" checked="checked"> 공연정보</label>
+                <label id="RAD2"><input type="radio" name="tp_cd" value="2"> 판매정보</label>
+                <label id="RAD3"><input type="radio" name="tp_cd" value="3" > 공연장정보</label>
+                <label id="RAD4"> <input type="radio" name="tp_cd" value="4" > FAQ</label>
+            </div>
+            <div id="POP1"></div>
+            <div id="POP2" style="display:none"></div>
+            <div id="POP3" style="display:none"></div>
+            <div id="POP4" style="display:none"></div>
+        </div>
+    </div>
+
+    <script>
+
+        set_pop_block('1');
+        set_rad_chk('1');
+
+        $('input[type=radio][name=tp_cd]').on('click', function() {
+
+            var chkValue = $('input[type=radio][name=tp_cd]:checked').val();
+            set_radio_pop(chkValue);
+        } ) 
+
+        importPage('header');
+        importPage('poster');
+        importPage('POP1');
+        importPage('POP2');
+        importPage('POP3');
+        importPage('POP4');
+
+    </script>
+    
+</body>
+</html>
