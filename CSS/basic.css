@@ -17,15 +17,34 @@ body{
 }
 
 
-
 label{
+    width: 25%;
     border-width:1px 1px 1px 0px;
     border-style: solid;
     border-color: white;
+    
 }
 
-a{
+header{
+    border-width: 0px 0px 5px 0px;
+    border-style: solid;
+    border-color: red;
+}
+
+header div{
+    padding: 0.5em 10px 0.5em 10px;
+}
+
+
+.title{ /*header*/
+    font-size:xx-large;
+    color: red;
+    font-weight: bold;
+}
+
+.a{
     color: gray;
+    font-size: small;
 }
 
 [type="radio"], /*라디오버튼 안나타나게 하기*/
@@ -45,10 +64,17 @@ display: none;
     display:inline-block;
 	width:1em;
 	height:1em;
-	margin:auto;
+    align-items: center;
 }
 
+#POP, #poster, #radio {
+   padding : 10px;
+}
+
+/*
 div{
     border:solid;
-    border-width: 1px; /*영역 확인 용  다 확인하면 삭제할 것*/
+    border-width: 1px; 
 }
+
+*/ /*영역 확인 용  다 확인하면 삭제할 것*/
