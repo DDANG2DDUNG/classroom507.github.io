@@ -6,6 +6,53 @@
     <title>poster</title>
 </head>
 <body>
-    포스터 들어갈 부분
+   
+<!-- poster & information -->
+<div style="display: flex; flex-direction:row;">
+    <!-- title -->
+    
+    <!-- poster -->
+    <div id="posterImage" class="horizontal" style="width:30%; align-items: center;">
+        <img src="Image/poster.jpg" style="width:90%; border-radius:10px;">
+    </div>
+    
+    <!-- information : jquery를 이용하여 안의 내용은 따로 불러오기 -->
+    <div id="top_information" class="horizontal" style="flex-grow: 1;">
+        <table>
+            <tr>
+                <td class="left">제작</td>
+                <td class="right">인문극회 76기</td>
+            </tr>
+            <tr>
+                <td class="left">장소</td>
+                <td class="right" onclick="window.open('https://place.map.kakao.com/17556081'); normal(this);" onmouseover="underLine(this);" onmouseout="normal(this);" style="cursor:pointer;">이화여자대학교 생활환경관 소극장◀︎</td>
+            </tr>
+            <tr>
+                <td class="left">공연 기간</td>
+                <td class="right">2023.08.30 ~ 2023.09.02</td>
+            </tr>
+
+            <tr>
+                <td class="left">공연 시간</td>
+                <td class="right">
+                    수정예정<br>
+                    수정예정<br>
+                    수정예정<br>
+                    수정예정<br>
+                    수정예정<br>
+                    수정예정<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">관람 시간</td>
+                <td class="right">약 90분 (인터미션 없음)</td>
+            </tr>
+            <tr>
+                <td class="left">가격</td>
+                <td class="right">전석 7,000원</td>
+            </tr>
+        </table>
+    </div>
+</div>
 </body>
 </html>

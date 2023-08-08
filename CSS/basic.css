@@ -69,11 +69,16 @@ display: none;
 }
 
 #POP, #radio {
-   padding : 0 10px 0 10px;
+   margin : 0 10px 0 10px;
    width:100%;
    box-sizing: border-box;
 }
 
+#radio {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(243, 0, 0, 0.5);;
+}
 
 #radio {
     display: flex;
@@ -90,6 +95,26 @@ img {
  
 }
 
+#FAQ {
+    padding :2em;
+}
+
+.FAQ {
+    padding :1em;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(243, 0, 0, 0.5);
+}
+
+.Question {
+    line-height: 3em;
+    font-size: larger;
+}
+
+.Answer_Number{
+    line-height: 2em;
+}
+
 /*
 div{
     border:solid;
@@ -97,3 +122,10 @@ div{
 }
 
 */ /*영역 확인 용  다 확인하면 삭제할 것*/
+
+
+@media (min-width: 1024px){
+            #posterImage {
+                display: none;
+            }
+}

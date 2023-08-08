@@ -27,22 +27,22 @@ rb{
     line-height: 2em;
 }
     
-table{
+#POP2 table{
     width:100%;
     background-color:rgba(243, 0, 0, 0.05);   
-     border-collapse: collapse
+    border-collapse: collapse
 }
 
-td {
+#POP2 td {
    line-height:3em;
 }
-tr {
+#POP2 tr {
    border-width:1px 0 1px 0;
    border-style:solid;
    border-color:rgba(243, 0, 0, 0.5);
 }
 
-.left{
+#POP2 .left{
     width:20%;
     font-weight:bold;
     vertical-align:center;
@@ -50,13 +50,13 @@ tr {
     border-spacing: 1em;
     background-color:rgba(243, 0, 0, 0.15);
 }
-.right{
+#POP2 .right{
     line-height:1.5em;
     padding:1em;
     box-sizing:border-box;
 }
 
-.title{
+#POP2 .title{
     width:100%;
     height:3em;
     font-weight:bold;
@@ -71,6 +71,22 @@ tr {
     font-weight:bolder;
 }
 
-ul{
-    list-style-position:outside;
+.Answer  ul {
+    list-style-type: none;
+    list-style-position: outside;
+  }
+.Answer li:before {
+    content: "\f0a4";
+    font-family: FontAwesome;
+  }
+
+
+
+#top_information table{
+    width:100%;
+    border-collapse: collapse
+}
+
+#top_information td {
+   line-height:2em;
 }
