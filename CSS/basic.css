@@ -123,8 +123,10 @@ div{
 
 */ /*영역 확인 용  다 확인하면 삭제할 것*/
 
-
-@media (max-width: 824px){
+#posterImage{
+    display:block;
+}
+@media screen and (max-width: 500px){
             #posterImage {
                 display: none;
             }
