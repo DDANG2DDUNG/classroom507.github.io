@@ -1,10 +1,6 @@
 
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family:'NanumBarunGothic';
-}
+
 
 #outer{ /* 가운데 정렬을 위한 outer div*/
     margin: 0 auto;
@@ -126,8 +122,20 @@ div{
 #posterImage{
     display:block;
 }
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'NanumBarunGothic';
+}
 @media screen and (max-width: 500px){
             #posterImage {
                 display: none;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+                font-family:'NanumBarunGothic';
+                font-size: smaller;
             }
 }
