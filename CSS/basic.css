@@ -73,14 +73,10 @@ display: none;
 #radio {
     border-width: 0px 0px 1px 0px;
     border-style: solid;
-    border-color: rgba(243, 0, 0, 0.5);;
-}
-
-#radio {
+    border-color: rgba(243, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
 }
-
 
 img {
     width: 100%;
@@ -88,7 +84,6 @@ img {
 
 #POP2, #POP3, #POP4 {
     padding :10px;
- 
 }
 
 #FAQ {
