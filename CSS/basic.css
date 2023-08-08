@@ -126,6 +126,7 @@ body{
     margin: 0;
     padding: 0;
     font-family:'NanumBarunGothic';
+    font-size : 12pt;
 }
 @media screen and (max-width: 500px){
             #posterImage {
@@ -136,6 +137,6 @@ body{
                 margin: 0;
                 padding: 0;
                 font-family:'NanumBarunGothic';
-                font-size: smaller;
+                font-size: 8pt;
             }
 }
