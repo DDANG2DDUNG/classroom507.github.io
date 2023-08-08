@@ -17,13 +17,6 @@ header div{
     padding: 0.5em 10px 0.5em 10px;
 }
 
-
-.title{ /*header*/
-    font-size:xx-large;
-    color: red;
-    font-weight: bold;
-}
-
 .a{
     color: gray;
     font-size: small;
@@ -122,6 +115,12 @@ body{
     font-family:'NanumBarunGothic';
     font-size : 12pt;
 }
+.title{ /*header*/
+    color: red;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
 @media screen and (max-width: 500px){
             #posterImage {
                 display: none;
@@ -132,5 +131,9 @@ body{
                 padding: 0;
                 font-family:'NanumBarunGothic';
                 font-size: 9pt;
+            }
+
+            .title{
+                font-size:larger;
             }
 }
