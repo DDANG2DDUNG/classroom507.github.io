@@ -170,4 +170,10 @@ button{
                 display: none;
             }
 
+
+            #phone_ticket {
+                display: block;
+           }
+
+
 }
