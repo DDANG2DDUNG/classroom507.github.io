@@ -122,6 +122,22 @@ body{
     font-size: 30pt;
 }
 
+button{
+    padding: 0.5em;
+    color: rgba(248,245,235,1);
+    background-color: rgba(37,58,46, 1);;
+    border: none;
+    border-radius: 0.5em;
+    width: 100%;
+
+    font-size: 12pt;
+}
+
+#phone_ticket {
+    display: none;
+}
+
+
 @media screen and (max-width: 500px){
             #posterImage {
                 display: none;
@@ -138,4 +154,20 @@ body{
             .title{
                 font-size:15pt;
             }
+
+            button{
+                padding: 0.5em;
+                color: rgba(248,245,235,1);
+                background-color: rgba(37,58,46, 1);;
+                border: none;
+                border-radius: 0.5em;
+                width: 100%;
+
+                font-size: 9pt;
+            }
+
+            #computer_ticket {
+                display: none;
+            }
+
 }
