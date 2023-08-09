@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>인문극회 76기 <클래스></title>
+
+    <link rel="stylesheet" href="CSS/basic.css">
+    <link rel="stylesheet" href="CSS/font.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/board/css/mediaquery.css">
+
+    <script src="JAVASCRIPT/set_pop.js"></script>
+    <script src="JAVASCRIPT/set_radio.js"></script>
+    <script src="JAVASCRIPT/importPage.js"></script>
+    <script src="JAVASCRIPT/basic.js"></script>
+</head>
+<body>
+
+
+    <div id="outer">
+        <header id="header"></header>
+        <div id="poster"></div>
+        <div>
+            <div id="radio">
+                <label id="RAD1"><input type="radio" name="tp_cd" value="1" checked="checked"> 공연 정보</label>
+                <label id="RAD2"><input type="radio" name="tp_cd" value="2"> 판매 정보</label>
+                <label id="RAD3"><input type="radio" name="tp_cd" value="3" > 공연장 정보</label>
+                <label id="RAD4"> <input type="radio" name="tp_cd" value="4" > FAQ</label>
+            </div>
+            <div id="POP">
+                <div id="POP1"></div>
+                <div id="POP2" style="display:none"></div>
+                <div id="POP3" style="display:none">
+                    <div id="daumRoughmapContainer1691436438316" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                </div>
+                <div id="POP4" style="display:none"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script>
+
+        $('#outer').width(screen.width);
+
+        set_pop_block('1');
+        set_rad_chk('1');
+
+        $('input[type=radio][name=tp_cd]').on('click', function() {
+
+            var chkValue = $('input[type=radio][name=tp_cd]:checked').val();
+            set_radio_pop(chkValue);
+        } ) 
+
+        importPage('header');
+        importPage('poster');
+        importPage('POP1');
+        importPage('POP2');
+        importPage('POP4');
+      
+
+    </script>
+ 
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1691436438316",
+            "key" : "2frwy",
+            "mapWidth" : "640",
+            "mapHeight" : "360"
+        }).render();
+    </script>
+</body>
+</html>
