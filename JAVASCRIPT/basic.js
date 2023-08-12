@@ -9,6 +9,6 @@ function normal(obj){
 }
 
 function move_to_ticketing(){
-    window.open('https://www.naver.com');
+    window.open('https://forms.gle/xBHakjNuC4A64Eyx6');
 }
 
