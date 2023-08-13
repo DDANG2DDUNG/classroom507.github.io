@@ -151,7 +151,7 @@ button{
             }
 
             .title{
-                font-size:15pt;
+                font-size:20pt;
             }
 
             button{
@@ -171,12 +171,14 @@ button{
 
 
             #phone_ticket {
-                display: block;
+                display: flex;
                 position: fixed;
                 bottom: 2px;
                 height: 3em;
                 line-height: 3em;
-                color:red;
+                color:rgba(248,245,235,1);
+                align-items:center;
+
            }
 
 
