@@ -151,7 +151,7 @@ button{
             }
 
             .title{
-                font-size:20pt;
+                font-size:25pt;
             }
 
             button{
@@ -178,6 +178,9 @@ button{
                 line-height: 3em;
                 color:rgba(248,245,235,1);
                 align-items:center;
+                border-color: rgba(248,245,235,1);
+                border-width: 2px;
+                text-align: center;
 
            }
 
